@@ -6,7 +6,7 @@ class Routes {
   factory Routes.of(BuildContext context) => Routes._(context);
   final BuildContext context;
 
-  void toLocationHomeModule() => context.go('/${RoutePath.homeModule}');
+  void toLocationHomeModule() => context.pushReplacement('/${RoutePath.homeModule}');
 
   void toLocationUserDetails(String id, String uuid, String fName, String lName, String uName, String pWord,
           String email, String ip, String macAdd, String webSite, String image) =>

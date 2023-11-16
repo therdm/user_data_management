@@ -18,13 +18,13 @@ class UserDetailsRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Colors.grey.withOpacity(0.3), borderRadius: BorderRadius.circular(12)),
-      margin: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 7.0),
+      decoration: BoxDecoration(color: Colors.grey.withOpacity(0.2), borderRadius: BorderRadius.circular(4)),
+      margin: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
       child: ListTile(
         onTap: onSelect,
         onLongPress: onSelect,
         leading: Container(
-          decoration: BoxDecoration(borderRadius: BorderRadius.circular(50)),
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(48)),
           clipBehavior: Clip.hardEdge,
           child: CachedNetworkImage(
             imageUrl: imageUrl,
